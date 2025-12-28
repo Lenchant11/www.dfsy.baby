@@ -2646,7 +2646,7 @@
         successModal.classList.remove('active');
         // 发送转化事件并打开WhatsApp，带上附加话术
         const whatsappMessage = encodeURIComponent("Hi! I just applied for remote work through Hiwork. I want to learn more and join this job. Can you provide more information?");
-        const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+        const whatsappLink = `https://wa.me/${randomAccount}`;
         gtag_report_conversion(whatsappLink);
       });
       
@@ -2726,14 +2726,14 @@
             
             // 发送转化事件
             const whatsappMessage = encodeURIComponent("Hi! I just applied for remote work through Hiwork. I want to learn more and join this job. Can you provide more information?");
-            const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+            const whatsappLink = `https://wa.me/${randomAccount}`;
             gtag_report_conversion(whatsappLink);
           } catch (error) {
             console.log('Google Analytics error:', error);
             // 备用
             setTimeout(() => {
               const whatsappMessage = encodeURIComponent("Hi! I just applied for remote work through Hiwork. I want to learn more and join this job. Can you provide more information?");
-              const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+              const whatsappLink = `https://wa.me/${randomAccount}`;
               window.open(whatsappLink, '_blank');
             }, 300);
           }
