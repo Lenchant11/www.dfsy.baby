@@ -1,0 +1,2859 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hiwork Canada - Get Hired for Remote Work | Verified Jobs from Home</title>
+  <meta name="description" content="Get matched with verified Canadian remote jobs. Work from home with trusted employers. Customer service, data entry, admin roles available. Apply now!" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- 加拿大风格配色 - 红白主题 -->
+  <style>
+    :root {
+      /* 加拿大国旗颜色 - 红色和白色 */
+      --primary: #D80621; /* 加拿大红 */
+      --secondary: #FFFFFF; /* 白色 */
+      --accent: #A6001A; /* 深红色 */
+      --light: #FFFFFF;
+      --dark: #1C2B3A;
+      --gray-50: #F8FAFC;
+      --gray-100: #F1F5F9;
+      --gray-200: #E2E8F0;
+      --gray-300: #CBD5E1;
+      --gray-600: #64748B;
+      --gray-700: #475569;
+      --gray-800: #334155;
+      
+      /* 加拿大官方蓝色 */
+      --canada-blue: #0055A4;
+      
+      /* 枫叶红 */
+      --maple-red: #D80621;
+      
+      /* 字体 */
+      --font-heading: 'Poppins', sans-serif;
+      --font-body: 'Inter', sans-serif;
+      
+      /* 间距 - 移动端优化 */
+      --space-xs: 0.25rem;
+      --space-sm: 0.75rem;
+      --space-md: 1.5rem;
+      --space-lg: 2rem;
+      --space-xl: 3rem;
+      
+      /* 圆角 */
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 16px;
+      --radius-full: 9999px;
+      
+      /* 阴影 */
+      --shadow-sm: 0 1px 3px rgba(216, 6, 33, 0.08);
+      --shadow-md: 0 3px 10px rgba(216, 6, 33, 0.12);
+      --shadow-lg: 0 5px 20px rgba(216, 6, 33, 0.15);
+      
+      /* 过渡效果 */
+      --transition-fast: 0.15s ease;
+      --transition-base: 0.25s ease;
+    }
+    
+    /* === 重置和基础样式 === */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.6;
+      color: var(--gray-800);
+      background-color: var(--light);
+      overflow-x: hidden;
+      padding-bottom: 80px; /* 为移动端悬浮按钮留出空间 */
+    }
+    
+    @media (min-width: 769px) {
+      body {
+        padding-bottom: 0;
+      }
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      line-height: 1.3;
+      color: var(--dark);
+    }
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: var(--transition-fast);
+    }
+    
+    button, input, select, textarea {
+      font-family: inherit;
+      font-size: inherit;
+    }
+    
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    
+    ul, ol {
+      list-style: none;
+    }
+    
+    .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 var(--space-sm);
+    }
+    
+    .section {
+      padding: var(--space-lg) 0;
+    }
+    
+    @media (max-width: 768px) {
+      .section {
+        padding: var(--space-md) 0;
+      }
+    }
+    
+    .section-header {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto var(--space-md);
+    }
+    
+    .section-title {
+      font-size: 1.75rem;
+      margin-bottom: var(--space-sm);
+      color: var(--primary);
+    }
+    
+    @media (max-width: 768px) {
+      .section-title {
+        font-size: 1.5rem;
+      }
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+      color: var(--gray-600);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    
+    /* === 按钮 === */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.875rem 1.5rem;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-family: var(--font-heading);
+      border: none;
+      cursor: pointer;
+      transition: var(--transition-base);
+      text-align: center;
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+      background: linear-gradient(135deg, #A6001A, #8B0016);
+    }
+    
+    .btn-primary:active {
+      transform: translateY(0);
+    }
+    
+    .btn-primary::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+      transition: 0.5s;
+    }
+    
+    .btn-primary:hover::after {
+      left: 100%;
+    }
+    
+    .btn-secondary {
+      background: white;
+      color: var(--primary);
+      border: 2px solid var(--primary);
+    }
+    
+    .btn-secondary:hover {
+      background: var(--gray-100);
+    }
+    
+    .btn-lg {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
+    }
+    
+    .btn-block {
+      width: 100%;
+    }
+    
+    .btn-icon {
+      font-size: 1.1em;
+    }
+    
+    /* === 页头和导航 === */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: white;
+      border-bottom: 1px solid var(--gray-200);
+      padding: 0.75rem 0;
+      box-shadow: 0 2px 10px rgba(216, 6, 33, 0.1);
+    }
+    
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
+    
+    @media (max-width: 1024px) {
+      .nav {
+        flex-wrap: wrap;
+      }
+    }
+    
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-family: var(--font-heading);
+      font-weight: 800;
+      font-size: 1.4rem;
+      color: var(--primary);
+    }
+    
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: var(--primary);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    
+    .nav-links {
+      display: none;
+    }
+    
+    @media (min-width: 1024px) {
+      .nav-links {
+        display: flex;
+        gap: 1.5rem;
+        align-items: center;
+      }
+    }
+    
+    .nav-link {
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    
+    .nav-link:hover {
+      color: var(--primary);
+    }
+    
+    .nav-cta {
+      display: none;
+    }
+    
+    @media (min-width: 1024px) {
+      .nav-cta {
+        display: block;
+        margin-left: 0.5rem;
+      }
+    }
+    
+    /* 移动端CTA按钮 */
+    .mobile-cta-btn {
+      display: none;
+    }
+    
+    @media (max-width: 1023px) {
+      .mobile-cta-btn {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 1.2rem;
+        color: var(--primary);
+        cursor: pointer;
+        margin-left: auto;
+        margin-right: 1rem;
+      }
+    }
+    
+    .mobile-menu-btn {
+      display: block;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--primary);
+      cursor: pointer;
+    }
+    
+    @media (min-width: 1024px) {
+      .mobile-menu-btn {
+        display: none;
+      }
+      
+      .mobile-cta-btn {
+        display: none;
+      }
+    }
+    
+    /* === 移动端悬浮按钮 === */
+    .floating-cta {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 999;
+      width: 90%;
+      max-width: 400px;
+      animation: floatUp 0.5s ease;
+      box-shadow: 0 10px 30px rgba(216, 6, 33, 0.25);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+    }
+    
+    @media (max-width: 768px) {
+      .floating-cta {
+        display: block;
+      }
+    }
+    
+    .floating-cta .btn-primary {
+      width: 100%;
+      padding: 1.2rem;
+      font-size: 1.1rem;
+      border-radius: var(--radius-lg);
+      box-shadow: 0 8px 25px rgba(216, 6, 33, 0.3);
+    }
+    
+    @keyframes floatUp {
+      from {
+        opacity: 0;
+        transform: translateX(-50%) translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+    
+    /* === 紧急通知栏 === */
+    .urgency-bar {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      padding: 0.75rem 0;
+      position: relative;
+      overflow: hidden;
+      margin-top: 60px;
+    }
+    
+    .urgency-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    
+    @media (min-width: 768px) {
+      .urgency-bar {
+        padding: 1rem 0;
+      }
+      
+      .urgency-container {
+        justify-content: flex-start;
+      }
+    }
+    
+    .urgency-scroll {
+      display: flex;
+      animation: scrollText 25s linear infinite;
+      white-space: nowrap;
+    }
+    
+    @keyframes scrollText {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    
+    @media (max-width: 767px) {
+      .urgency-scroll {
+        animation: scrollText 20s linear infinite;
+      }
+    }
+    
+    .urgency-content {
+      display: inline-flex;
+      gap: 2rem;
+      padding: 0 1rem;
+      align-items: center;
+    }
+    
+    .urgency-item {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+    
+    .urgency-icon {
+      font-size: 1em;
+    }
+    
+    /* === 主图部分 === */
+    .hero {
+      padding: var(--space-md) 0;
+      background: linear-gradient(135deg, rgba(255, 245, 245, 0.95) 0%, rgba(255, 255, 255, 0.95) 100%);
+      position: relative;
+      overflow: hidden;
+      min-height: 600px;
+      display: flex;
+      align-items: center;
+      border-bottom: 3px solid var(--primary);
+    }
+    
+    @media (max-width: 768px) {
+      .hero {
+        min-height: auto;
+        padding: var(--space-lg) 0;
+      }
+    }
+    
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        linear-gradient(90deg, rgba(255, 245, 245, 0.95) 0%, rgba(255, 255, 255, 0.85) 50%, rgba(255, 255, 255, 0.7) 100%),
+        url('https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');
+      background-size: cover;
+      background-position: center right;
+      z-index: 1;
+    }
+    
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      position: relative;
+      z-index: 2;
+    }
+    
+    @media (min-width: 1024px) {
+      .hero-grid {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: var(--space-lg);
+      }
+    }
+    
+    .hero-content {
+      text-align: center;
+    }
+    
+    @media (min-width: 1024px) {
+      .hero-content {
+        text-align: left;
+      }
+    }
+    
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: white;
+      color: var(--primary);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      margin-bottom: var(--space-sm);
+      box-shadow: var(--shadow-sm);
+      font-size: 0.875rem;
+      border: 2px solid var(--primary);
+    }
+    
+    .hero-title {
+      font-size: 1.75rem;
+      margin-bottom: var(--space-sm);
+      line-height: 1.2;
+    }
+    
+    @media (min-width: 768px) {
+      .hero-title {
+        font-size: 2rem;
+      }
+    }
+    
+    @media (min-width: 1024px) {
+      .hero-title {
+        font-size: 2.5rem;
+      }
+    }
+    
+    .hero-subtitle {
+      font-size: 1rem;
+      color: var(--gray-600);
+      margin-bottom: var(--space-md);
+    }
+    
+    @media (min-width: 768px) {
+      .hero-subtitle {
+        font-size: 1.125rem;
+      }
+    }
+    
+    .hero-features {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin-bottom: var(--space-md);
+    }
+    
+    @media (max-width: 480px) {
+      .hero-features {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      flex-shrink: 0;
+      font-size: 1rem;
+    }
+    
+    .feature-text strong {
+      display: block;
+      font-size: 0.95rem;
+      margin-bottom: 0.125rem;
+    }
+    
+    .feature-text p {
+      color: var(--gray-600);
+      font-size: 0.85rem;
+    }
+    
+    /* === 申请表 === */
+    .form-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      box-shadow: var(--shadow-lg);
+      border: 1px solid var(--gray-200);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .form-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: var(--primary);
+    }
+    
+    .form-header {
+      text-align: center;
+      margin-bottom: 1.5rem;
+    }
+    
+    .form-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+      color: var(--primary);
+    }
+    
+    .form-subtitle {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+    }
+    
+    .form-group {
+      margin-bottom: 1rem;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 0.375rem;
+      font-weight: 600;
+      color: var(--gray-800);
+      font-size: 0.95rem;
+    }
+    
+    .form-label .required {
+      color: var(--primary);
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 0.875rem;
+      border: 1.5px solid var(--gray-300);
+      border-radius: var(--radius-md);
+      font-size: 0.95rem;
+      transition: var(--transition-fast);
+      background: white;
+    }
+    
+    .form-control:focus {
+      outline: none;
+      border-color: var(--primary);
+      box-shadow: 0 0 0 2px rgba(216, 6, 33, 0.1);
+    }
+    
+    .phone-group {
+      display: flex;
+    }
+    
+    .country-code {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem;
+      background: var(--gray-100);
+      border: 1.5px solid var(--gray-300);
+      border-right: none;
+      border-radius: var(--radius-md) 0 0 var(--radius-md);
+      font-weight: 600;
+      font-size: 0.95rem;
+      flex-shrink: 0;
+    }
+    
+    .phone-input {
+      flex: 1;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+    }
+    
+    .form-check {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .form-check-input {
+      margin-top: 0.25rem;
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+    }
+    
+    .form-check-label {
+      font-size: 0.85rem;
+      color: var(--gray-600);
+      line-height: 1.4;
+    }
+    
+    .form-check-label a {
+      color: var(--primary);
+      font-weight: 600;
+    }
+    
+    .form-check-label a:hover {
+      text-decoration: underline;
+    }
+    
+    .security-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.875rem;
+      background: rgba(216, 6, 33, 0.08);
+      border: 1px solid rgba(216, 6, 33, 0.15);
+      border-radius: var(--radius-md);
+      margin-top: 1.5rem;
+      font-size: 0.85rem;
+    }
+    
+    .security-icon {
+      color: var(--primary);
+      font-size: 1rem;
+    }
+    
+    /* 主表单 */
+    .hero-form {
+      display: block;
+    }
+    
+    /* === 工作列表部分 === */
+    .jobs-section {
+      background: white;
+    }
+    
+    .jobs-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: var(--space-md);
+    }
+    
+    @media (min-width: 768px) {
+      .jobs-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .job-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      box-shadow: var(--shadow-md);
+      transition: var(--transition-base);
+      border: 1px solid var(--gray-200);
+      position: relative;
+      overflow: hidden;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .job-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--primary);
+    }
+    
+    .job-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: var(--primary);
+    }
+    
+    .job-badge {
+      display: inline-block;
+      padding: 0.375rem 1rem;
+      background: var(--primary);
+      color: white;
+      border-radius: var(--radius-full);
+      font-weight: 700;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+      width: fit-content;
+    }
+    
+    .job-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .job-salary {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      font-weight: 800;
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .job-features {
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    
+    .job-feature {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 0.75rem;
+      color: var(--gray-600);
+      font-size: 0.9rem;
+    }
+    
+    .job-feature i {
+      color: var(--primary);
+      width: 18px;
+      font-size: 1rem;
+    }
+    
+    .salary-details {
+      font-size: 0.9rem;
+      color: var(--gray-600);
+      width: 100%;
+      margin-top: 0.25rem;
+    }
+    
+    .salary-note {
+      font-size: 0.8rem;
+      color: var(--gray-500);
+      width: 100%;
+      margin-top: 0.25rem;
+    }
+    
+    /* === 统计数据部分 === */
+    .stats-section {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+    }
+    
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      text-align: center;
+    }
+    
+    @media (min-width: 768px) {
+      .stats-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+      }
+    }
+    
+    .stat-item {
+      padding: 1.5rem 1rem;
+    }
+    
+    .stat-number {
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 0.25rem;
+      line-height: 1;
+    }
+    
+    @media (min-width: 768px) {
+      .stat-number {
+        font-size: 2.5rem;
+      }
+    }
+    
+    .stat-label {
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    /* === 工作原理 === */
+    .how-it-works {
+      background: white;
+    }
+    
+    .steps-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin-top: var(--space-md);
+    }
+    
+    @media (min-width: 768px) {
+      .steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    
+    .step-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      text-align: center;
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--gray-200);
+      transition: var(--transition-base);
+      height: 100%;
+    }
+    
+    .step-card:hover {
+      transform: translateY(-2px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .step-number {
+      width: 50px;
+      height: 50px;
+      background: var(--primary);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 800;
+      font-size: 1.25rem;
+      margin: 0 auto 1rem;
+    }
+    
+    .step-title {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+    }
+    
+    .step-description {
+      color: var(--gray-600);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    
+    /* === 用户评价 === */
+    .testimonials-section {
+      background: var(--gray-100);
+    }
+    
+    .testimonials-slider {
+      max-width: 800px;
+      margin: var(--space-md) auto 0;
+      position: relative;
+      overflow: hidden;
+      min-height: 220px;
+    }
+    
+    .testimonials-track {
+      display: flex;
+      transition: transform 0.5s ease;
+      width: 500%;
+    }
+    
+    .testimonial-slide {
+      flex: 0 0 20%;
+      padding: 0 0.5rem;
+      box-sizing: border-box;
+      height: 100%;
+    }
+    
+    .testimonial-card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      box-shadow: var(--shadow-md);
+      border: 1px solid var(--gray-200);
+      position: relative;
+      height: 100%;
+    }
+    
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 0.5rem;
+      left: 0.5rem;
+      font-size: 3rem;
+      font-family: Georgia, serif;
+      color: var(--gray-300);
+      line-height: 1;
+    }
+    
+    .testimonial-content {
+      font-size: 1rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      position: relative;
+      z-index: 1;
+      font-style: italic;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    
+    .author-avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-weight: 700;
+      font-size: 1.25rem;
+      flex-shrink: 0;
+    }
+    
+    .author-info h4 {
+      margin-bottom: 0.125rem;
+      font-size: 1.1rem;
+    }
+    
+    .author-info p {
+      color: var(--gray-600);
+      font-size: 0.85rem;
+    }
+    
+    .slider-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    
+    .slider-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--gray-300);
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      transition: var(--transition-fast);
+    }
+    
+    .slider-dot.active {
+      background: var(--primary);
+      transform: scale(1.2);
+    }
+    
+    /* === 常见问题 === */
+    .faq-section {
+      background: var(--gray-100);
+    }
+    
+    .faq-grid {
+      max-width: 800px;
+      margin: var(--space-md) auto 0;
+    }
+    
+    .faq-item {
+      background: white;
+      border-radius: var(--radius-md);
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      border: 1px solid var(--gray-200);
+      transition: var(--transition-base);
+    }
+    
+    .faq-item.active {
+      box-shadow: var(--shadow-md);
+      border-color: var(--primary);
+    }
+    
+    .faq-question {
+      padding: 1.25rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 1rem;
+      color: var(--dark);
+    }
+    
+    .faq-question:hover {
+      background: var(--gray-100);
+    }
+    
+    .faq-icon {
+      transition: var(--transition-base);
+      color: var(--primary);
+      font-size: 0.9rem;
+    }
+    
+    .faq-item.active .faq-icon {
+      transform: rotate(180deg);
+    }
+    
+    .faq-answer {
+      padding: 0 1.25rem 1.25rem;
+      color: var(--gray-600);
+      line-height: 1.6;
+      font-size: 0.95rem;
+      display: none;
+    }
+    
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+    
+    /* === CTA部分 === */
+    .cta-section {
+      background: linear-gradient(135deg, var(--primary), var(--accent));
+      color: white;
+      text-align: center;
+    }
+    
+    .cta-title {
+      font-size: 1.75rem;
+      margin-bottom: var(--space-sm);
+    }
+    
+    @media (min-width: 768px) {
+      .cta-title {
+        font-size: 2rem;
+      }
+    }
+    
+    .cta-subtitle {
+      font-size: 1rem;
+      opacity: 0.9;
+      margin-bottom: var(--space-md);
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    /* === 页脚 === */
+    .footer {
+      background: var(--dark);
+      color: white;
+      padding: var(--space-lg) 0 var(--space-md);
+      border-top: 3px solid var(--primary);
+    }
+    
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-md);
+      margin-bottom: var(--space-md);
+    }
+    
+    @media (min-width: 768px) {
+      .footer-grid {
+        grid-template-columns: repeat(4, 1fr);
+      }
+    }
+    
+    .footer-logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 0.75rem;
+      display: inline-block;
+      color: white;
+    }
+    
+    .footer-description {
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 1rem;
+      line-height: 1.5;
+      font-size: 0.9rem;
+    }
+    
+    .footer-links h3 {
+      color: white;
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+    
+    .footer-links ul {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+    
+    .footer-links a {
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.9rem;
+    }
+    
+    .footer-links a:hover {
+      color: white;
+    }
+    
+    .footer-bottom {
+      text-align: center;
+      padding-top: var(--space-md);
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      color: rgba(255, 255, 255, 0.7);
+      font-size: 0.8rem;
+    }
+    
+    .compliance-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.1);
+      padding: 0.5rem 1rem;
+      border-radius: var(--radius-md);
+      margin-top: 1rem;
+      font-size: 0.85rem;
+    }
+    
+    /* === 模态框 === */
+    .modal {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.7);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 2000;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-base);
+      padding: var(--space-sm);
+    }
+    
+    .modal.active {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    .modal-content {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--space-md);
+      max-width: 500px;
+      width: 100%;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+      animation: modalIn 0.3s ease;
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+    
+    @keyframes modalIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .modal-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      color: var(--gray-600);
+      cursor: pointer;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-fast);
+      z-index: 2;
+    }
+    
+    .modal-close:hover {
+      background: var(--gray-100);
+      color: var(--dark);
+    }
+    
+    .modal-title {
+      font-size: 1.5rem;
+      margin-bottom: 0.75rem;
+      text-align: center;
+      color: var(--primary);
+    }
+    
+    .modal-message {
+      text-align: center;
+      color: var(--gray-600);
+      line-height: 1.5;
+      margin-bottom: 1.5rem;
+      font-size: 0.95rem;
+    }
+    
+    /* === 动画 === */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 0.4s ease forwards;
+    }
+    
+    .delay-1 {
+      animation-delay: 0.1s;
+    }
+    
+    .delay-2 {
+      animation-delay: 0.2s;
+    }
+    
+    .delay-3 {
+      animation-delay: 0.3s;
+    }
+    
+    /* === 工具类 === */
+    .text-center {
+      text-align: center;
+    }
+    
+    .text-primary {
+      color: var(--primary);
+    }
+    
+    .mb-1 { margin-bottom: 0.5rem; }
+    .mb-2 { margin-bottom: 0.75rem; }
+    .mb-3 { margin-bottom: 1.25rem; }
+    .mb-4 { margin-bottom: 1.5rem; }
+    
+    .mt-1 { margin-top: 0.5rem; }
+    .mt-2 { margin-top: 0.75rem; }
+    .mt-3 { margin-top: 1.25rem; }
+    .mt-4 { margin-top: 1.5rem; }
+    
+    .d-none {
+      display: none;
+    }
+    
+    .d-block {
+      display: block;
+    }
+    
+    /* 合规徽章 */
+    .compliance-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      justify-content: center;
+    }
+    
+    .compliance-badge-item {
+      background: var(--gray-50);
+      border: 1px solid var(--gray-200);
+      border-radius: 8px;
+      padding: 0.75rem 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      color: var(--gray-700);
+    }
+    
+    .compliance-badge-item i {
+      color: var(--primary);
+    }
+    
+    /* 平台说明 */
+    .platform-explanation {
+      background: var(--gray-50);
+      padding: 2rem;
+      border-radius: 12px;
+      margin: 2rem 0;
+      text-align: center;
+    }
+    
+    .platform-explanation h3 {
+      margin-bottom: 1rem;
+      color: var(--gray-800);
+    }
+    
+    /* 合规链接 */
+    .compliance-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .compliance-links a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+    
+    .compliance-links a:hover {
+      text-decoration: underline;
+    }
+    
+    /* 公司信息 */
+    .company-info {
+      text-align: center;
+      padding: 1.5rem;
+      background: var(--gray-50);
+      border-radius: 8px;
+      margin: 2rem auto;
+      max-width: 1200px;
+    }
+    
+    .company-info p {
+      margin: 0.5rem 0;
+      color: var(--gray-700);
+    }
+    
+    /* 薪资透明度 */
+    .salary-transparency {
+      background: #f8f9fa;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      border: 1px solid var(--gray-200);
+    }
+    
+    .salary-transparency h4 {
+      color: var(--gray-800);
+      margin-bottom: 1rem;
+    }
+    
+    /* 就业免责声明 */
+    .employment-disclaimer {
+      background: #fff8e6;
+      border: 1px solid #ffd54f;
+      border-radius: 8px;
+      padding: 1rem;
+      margin: 1.5rem 0;
+      font-size: 0.9rem;
+    }
+    
+    .employment-disclaimer strong {
+      color: #e65100;
+    }
+    
+    /* 申请后联系 */
+    .contact-options {
+      margin-top: 1.5rem;
+      padding: 1rem;
+      background: #f0f7ff;
+      border-radius: 8px;
+      border-left: 4px solid var(--primary);
+    }
+    
+    .contact-options h5 {
+      margin-bottom: 0.75rem;
+      color: var(--gray-800);
+    }
+    
+    /* 移动端优化 */
+    @media (max-width: 768px) {
+      .compliance-badges {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .compliance-badge-item {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .compliance-links {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      .platform-explanation {
+        padding: 1.5rem 1rem;
+      }
+      
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+    
+    /* 加拿大风格图案 - 枫叶主题 */
+    .canadian-pattern {
+      background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 20c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10z' fill='%23D80621' fill-opacity='0.05'/%3E%3Cpath d='M30 40c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10z' fill='%23D80621' fill-opacity='0.05'/%3E%3Cpath d='M70 40c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10z' fill='%23D80621' fill-opacity='0.05'/%3E%3Cpath d='M40 70c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10z' fill='%23D80621' fill-opacity='0.05'/%3E%3Cpath d='M60 70c-5 0-10 5-10 10s5 10 10 10 10-5 10-10-5-10-10-10z' fill='%23D80621' fill-opacity='0.05'/%3E%3C/svg%3E");
+      background-size: 200px;
+      opacity: 0.3;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      pointer-events: none;
+    }
+    
+    /* 自定义样式 */
+    small {
+      display: block;
+      margin-top: 0.25rem;
+      font-size: 0.8rem;
+      color: var(--gray-600);
+    }
+    
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%236B7280' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 0.75rem center;
+      background-size: 16px 12px;
+      padding-right: 2.5rem;
+    }
+    
+    /* 加拿大特色样式 */
+    .maple-leaf {
+      color: var(--primary);
+    }
+    
+    /* 吸引人的文案样式 */
+    .highlight-text {
+      color: var(--primary);
+      font-weight: 800;
+    }
+    
+    .urgent-badge {
+      background: #ff4444;
+      color: white;
+      padding: 0.25rem 0.75rem;
+      border-radius: var(--radius-full);
+      font-size: 0.75rem;
+      font-weight: 700;
+      margin-left: 0.5rem;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.7; }
+    }
+  </style>
+  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17694994857"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17694994857');
+    
+    function gtag_report_conversion(url) {
+      const callback = function () {
+        if (typeof(url) != 'undefined') {
+          setTimeout(function() {
+            const newWindow = window.open(url, '_blank');
+            if (!newWindow || newWindow.closed || typeof newWindow.closed == 'undefined') {
+              window.location.href = url;
+            }
+          }, 300);
+        }
+      };
+      
+      let eventSent = false;
+      const maxAttempts = 2;
+      let attempts = 0;
+      
+      const sendEvent = () => {
+        try {
+          if (!eventSent) {
+            gtag('event', 'conversion', {
+              'send_to': 'AW-17694994857/Q-BpCOjhwtQbEKnj0PVB',
+              'event_callback': callback,
+              'value': 10,
+              'currency': 'USD'
+            });
+            
+            gtag('event', 'generate_lead', {
+              'currency': 'USD',
+              'value': 10
+            });
+            eventSent = true;
+          }
+        } catch (e) {
+          attempts++;
+          if (attempts < maxAttempts) {
+            setTimeout(sendEvent, 100);
+          } else {
+            callback();
+          }
+        }
+      };
+      
+      sendEvent();
+      
+      setTimeout(() => {
+        if (!eventSent) {
+          callback();
+        }
+      }, 1000);
+      
+      return false;
+    }
+  </script>
+</head>
+<body>
+  <!-- 加拿大风格图案背景 -->
+  <div class="canadian-pattern"></div>
+  
+  <!-- 页头 -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo">
+          <div class="logo-icon">
+            <i class="fas fa-maple-leaf"></i>
+          </div>
+          <span class="logo-text">Hiwork</span>
+        </a>
+        
+        <div class="nav-links">
+          <a href="#opportunities" class="nav-link">Remote Jobs</a>
+          <a href="#how" class="nav-link">How It Works</a>
+          <a href="#about" class="nav-link">About Us</a>
+          <a href="#faq" class="nav-link">FAQ</a>
+          <a href="#" class="btn btn-primary nav-cta open-modal-btn">
+            Apply Now
+          </a>
+        </div>
+        
+        <!-- 移动端CTA按钮 -->
+        <button class="mobile-cta-btn open-modal-btn">
+          <i class="fas fa-briefcase"></i>
+        </button>
+        
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- 紧急通知栏 -->
+  <div class="urgency-bar">
+    <div class="container urgency-container">
+      <div class="urgency-scroll">
+        <div class="urgency-content">
+          <div class="urgency-item">
+            <i class="fas fa-bolt urgency-icon"></i>
+            <span>⚠️ LIMITED SPOTS AVAILABLE - Apply now before positions fill!</span>
+          </div>
+          <div class="urgency-item">
+            <i class="fas fa-clock urgency-icon"></i>
+            <span>⏳ Priority processing for today's applicants</span>
+          </div>
+          <div class="urgency-item">
+            <i class="fas fa-users urgency-icon"></i>
+            <span>🔥 300+ Canadians hired last month - Join them today!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主图部分 -->
+  <section class="hero" id="top">
+    <div class="hero-bg"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content fade-in">
+          <div class="hero-badge">
+            <i class="fas fa-shield-alt"></i>
+            <span>Trusted Canadian Platform</span>
+          </div>
+          
+          <h1 class="hero-title">
+            <span>Work From Home</span> 
+            <span class="text-primary">Jobs in Canada</span>
+            <br>
+            <span>Earn <span class="highlight-text">$ Everyday</span> From Your Couch</span>
+          </h1>
+          
+          <p class="hero-subtitle">
+            Get matched with legitimate Canadian companies hiring for remote positions. No experience needed for many roles - we provide training!
+          </p>
+          
+          <!-- 平台说明 -->
+          <div class="platform-explanation fade-in">
+            <h3><i class="fas fa-bolt"></i> Quick & Easy Process</h3>
+            <p>Apply once, get matched with multiple employers. Most applicants hear back within 48 hours. No fees ever.</p>
+          </div>
+          
+          <div class="hero-features">
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-dollar-sign"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Good Pay</strong>
+                <p>$22-28/hour + benefits for most roles</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-clock"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Flexible Hours</strong>
+                <p>Choose shifts that fit your schedule</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="feature-text">
+                <strong>100% Remote</strong>
+                <p>Work from anywhere in Canada</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div class="feature-text">
+                <strong>Training Provided</strong>
+                <p>No experience? We'll train you</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 合规徽章 -->
+          <div class="compliance-badges">
+            <div class="compliance-badge-item">
+              <i class="fas fa-balance-scale"></i>
+              <span>Canadian Labour Law Compliant</span>
+            </div>
+            <div class="compliance-badge-item">
+              <i class="fas fa-lock"></i>
+              <span>Secure & Private</span>
+            </div>
+            <div class="compliance-badge-item">
+              <i class="fas fa-handshake"></i>
+              <span>No Fees - Ever</span>
+            </div>
+          </div>
+        </div>
+        
+        <!-- 主申请表 -->
+        <div class="hero-form form-card fade-in delay-1">
+          <div class="form-header">
+            <h2 class="form-title">Apply for Remote Jobs</h2>
+            <p class="form-subtitle">
+              <span class="highlight-text">2-minute application.</span> Get matched with employers today.
+            </p>
+            <div class="urgent-badge">SPOTS FILLING FAST</div>
+          </div>
+          
+          <form id="applicationForm">
+            <div class="form-group">
+              <label for="name" class="form-label">
+                <span>Your Full Name</span> <span class="required">*</span>
+              </label>
+              <input type="text" id="name" class="form-control" placeholder="As on official ID" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="phone" class="form-label">
+                <span>Phone Number</span> <span class="required">*</span>
+              </label>
+              <div class="phone-group">
+                <div class="country-code">
+                  <img src="https://flagcdn.com/w20/ca.png" alt="Canadian Flag" width="20" height="14">
+                  <span>+1</span>
+                </div>
+                <input type="tel" id="phone" class="form-control phone-input" placeholder="(XXX) XXX-XXXX" pattern="[0-9]{10}" required>
+              </div>
+              <small>Example: 4161234567 (no dashes)</small>
+            </div>
+            
+            <div class="form-group">
+              <label for="email" class="form-label">
+                <span>Email Address</span> <span class="required">*</span>
+              </label>
+              <input type="email" id="email" class="form-control" placeholder="your.email@example.com" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="age" class="form-label">
+                <span>Your Age</span> <span class="required">*</span>
+              </label>
+              <input type="number" id="age" class="form-control" placeholder="25" min="18" max="70" required>
+            </div>
+            
+            <div class="form-check">
+              <input type="checkbox" id="consent" class="form-check-input" required checked>
+              <label for="consent" class="form-check-label">
+                <span>I agree to the</span> 
+                <a href="/privacy.html" target="_blank">Privacy Policy</a> 
+                <span>&</span> 
+                <a href="/userterms.html" target="_blank">Terms</a>.
+              </label>
+            </div>
+            
+            <div class="form-check mb-3">
+              <input type="checkbox" id="eligibility" class="form-check-input" required>
+              <label for="eligibility" class="form-check-label">
+                <span>I'm legally eligible to work in Canada</span>
+              </label>
+            </div>
+            
+            <button type="submit" class="btn btn-primary btn-block">
+              <i class="fas fa-rocket btn-icon"></i>
+              <span>APPLY NOW & GET MATCHED</span>
+            </button>
+            
+            <div class="security-badge">
+              <i class="fas fa-lock security-icon"></i>
+              <span>Your info is secure. We'll never share it improperly.</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 公司信息 -->
+  <section class="section company-info" id="about">
+    <div class="container">
+      <h3 class="section-title">About Hiwork</h3>
+      <p>We connect Canadians with legitimate remote work opportunities from verified employers. We're a matching platform - not an employer - helping you find work that fits your life.</p>
+      <p>All jobs follow Canadian employment standards.</p>
+      
+      <div class="compliance-links">
+        <a href="/about.html"><i class="fas fa-info-circle"></i> Our Story</a>
+        <a href="/compliance.html"><i class="fas fa-balance-scale"></i> Compliance</a>
+        <a href="/contact.html"><i class="fas fa-headset"></i> Support</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作列表部分 -->
+  <section class="section jobs-section" id="opportunities">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Remote Jobs Hiring Now</h2>
+        <p class="section-subtitle">
+          Immediate openings with Canadian companies. All roles include training and proper employment contracts.
+        </p>
+      </div>
+      
+      <!-- 薪资透明度说明 -->
+      <div class="salary-transparency fade-in">
+        <h4><i class="fas fa-dollar-sign"></i> Competitive Pay</h4>
+        <p>Rates based on position and experience. Most roles start at $22+/hour with regular pay increases. Benefits included where applicable.</p>
+      </div>
+      
+      <div class="jobs-grid">
+        <!-- 工作 1 -->
+        <div class="job-card fade-in">
+          <div class="job-badge">Customer Service</div>
+          <h3 class="job-title">Remote Support Agent</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>$24 - $28/hour</span>
+          </div>
+          <span class="salary-details">+ health benefits after 90 days</span>
+          <span class="salary-note">Weekly direct deposit</span>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Flexible shift options</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span>Work from home</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Paid training provided</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-chart-line"></i>
+              <span>Growth opportunities</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply for This Role
+          </button>
+        </div>
+        
+        <!-- 工作 2 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge">Data Entry</div>
+          <h3 class="job-title">Data Processing Specialist</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>$22 - $26/hour</span>
+          </div>
+          <span class="salary-details">Bonuses available</span>
+          <span class="salary-note">Consistent schedule</span>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Set your own hours</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Equipment provided</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-file-alt"></i>
+              <span>Simple tasks</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-star"></i>
+              <span>No experience needed</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply for This Role
+          </button>
+        </div>
+        
+        <!-- 工作 3 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge">Online Support</div>
+          <h3 class="job-title">Chat Support Representative</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>$25 - $29/hour</span>
+          </div>
+          <span class="salary-details">+ performance bonuses</span>
+          <span class="salary-note">Full benefits package</span>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-headset"></i>
+              <span>Text/chat support only</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Day/evening shifts</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-dollar-sign"></i>
+              <span>Health & dental benefits</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-gift"></i>
+              <span>Full training provided</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply for This Role
+          </button>
+        </div>
+        
+        <!-- 工作 4 -->
+        <div class="job-card fade-in">
+          <div class="job-badge">Administrative</div>
+          <h3 class="job-title">Virtual Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>$23 - $27/hour</span>
+          </div>
+          <span class="salary-details">Based on experience</span>
+          <span class="salary-note">Flexible contract</span>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-tasks"></i>
+              <span>Admin & scheduling</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Work from anywhere</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-chart-line"></i>
+              <span>Career progression</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-alt"></i>
+              <span>Choose your schedule</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply for This Role
+          </button>
+        </div>
+        
+        <!-- 工作 5 -->
+        <div class="job-card fade-in delay-1">
+          <div class="job-badge">Quality Control</div>
+          <h3 class="job-title">Content Moderator</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>$23 - $26/hour</span>
+          </div>
+          <span class="salary-details">Steady hours</span>
+          <span class="salary-note">Regular pay increases</span>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-eye"></i>
+              <span>Review digital content</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-home"></i>
+              <span>100% remote</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-trophy"></i>
+              <span>Quality focused</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-users"></i>
+              <span>Team environment</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply for This Role
+          </button>
+        </div>
+        
+        <!-- 工作 6 -->
+        <div class="job-card fade-in delay-2">
+          <div class="job-badge">Entry Level</div>
+          <h3 class="job-title">Online Research Assistant</h3>
+          <div class="job-salary">
+            <i class="fas fa-money-bill-wave"></i>
+            <span>$21 - $25/hour</span>
+          </div>
+          <span class="salary-details">Perfect for beginners</span>
+          <span class="salary-note">Learn while you earn</span>
+          <div class="job-features">
+            <div class="job-feature">
+              <i class="fas fa-clock"></i>
+              <span>Part/full time options</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-laptop"></i>
+              <span>Basic computer skills</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-graduation-cap"></i>
+              <span>Full training included</span>
+            </div>
+            <div class="job-feature">
+              <i class="fas fa-calendar-check"></i>
+              <span>Start immediately</span>
+            </div>
+          </div>
+          <button class="btn btn-primary btn-block open-modal-btn">
+            Apply for This Role
+          </button>
+        </div>
+      </div>
+      
+      <!-- 就业法律声明 -->
+      <div class="employment-disclaimer mt-4">
+        <strong><i class="fas fa-balance-scale"></i> Legal Compliance:</strong> All positions comply with Canadian employment laws including minimum wage, working conditions, and proper contracts.
+      </div>
+    </div>
+  </section>
+
+  <!-- 统计数据部分 -->
+  <section class="section stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-number">2,300+</div>
+          <div class="stat-label">Canadians Hired</div>
+        </div>
+        <div class="stat-item fade-in delay-1">
+          <div class="stat-number">110+</div>
+          <div class="stat-label">Verified Companies</div>
+        </div>
+        <div class="stat-item fade-in delay-2">
+          <div class="stat-number">$6.2M+</div>
+          <div class="stat-label">Paid to Workers</div>
+        </div>
+        <div class="stat-item fade-in delay-3">
+          <div class="stat-number">4.8/5</div>
+          <div class="stat-label">Satisfaction Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 工作原理 -->
+  <section class="section how-it-works" id="how">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          Get matched with employers in 3 simple steps
+        </p>
+      </div>
+      
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-number">1</div>
+          <h3 class="step-title">Apply Online</h3>
+          <p class="step-description">
+            2-minute application. Tell us your preferences and availability.
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-1">
+          <div class="step-number">2</div>
+          <h3 class="step-title">Get Matched</h3>
+          <p class="step-description">
+            We connect you with employers looking for your skills.
+          </p>
+        </div>
+        
+        <div class="step-card fade-in delay-2">
+          <div class="step-number">3</div>
+          <h3 class="step-title">Start Working</h3>
+          <p class="step-description">
+            Employers contact you directly. Interview and start working.
+          </p>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fas fa-play-circle btn-icon"></i>
+          <span>Start Your Application</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.9rem;">
+          <i class="fas fa-check-circle text-primary"></i>
+          <span>Free service - only pay is your salary</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="section testimonials-section">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Success Stories</h2>
+        <p class="section-subtitle">
+          Real Canadians finding real work through Hiwork
+        </p>
+      </div>
+      
+      <div class="testimonials-slider" id="testimonialsSlider">
+        <div class="testimonials-track" id="testimonialsTrack">
+          <!-- 评价 1 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                "Lost my job during the pandemic. Applied on Hiwork and had 3 interviews within a week. Now earning $26/hour working from home. Life changing!"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">ES</div>
+                <div class="author-info">
+                  <h4>Emily S.</h4>
+                  <p>Customer Support, Toronto</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 评价 2 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                "As a single mom, I needed flexible hours. Found a data entry job paying $24/hour. Work when my kids are at school. Perfect solution!"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">JW</div>
+                <div class="author-info">
+                  <h4>Jessica W.</h4>
+                  <p>Data Specialist, Vancouver</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 评价 3 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                "No degree, no experience. Hiwork trained me for a chat support role. Making $27/hour with benefits. Couldn't be happier!"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">CP</div>
+                <div class="author-info">
+                  <h4>Chris P.</h4>
+                  <p>Online Support, Montreal</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 评价 4 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                "Retired but needed extra income. Working 20 hours/week from home earning $25/hour. Easy work, great pay, perfect for seniors."
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">LT</div>
+                <div class="author-info">
+                  <h4>Linda T.</h4>
+                  <p>Virtual Assistant, Ottawa</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- 评价 5 -->
+          <div class="testimonial-slide">
+            <div class="testimonial-card">
+              <div class="testimonial-content">
+                "Student loans were crushing me. Got a remote job through Hiwork making $23/hour while finishing school. Finally financial freedom!"
+              </div>
+              <div class="testimonial-author">
+                <div class="author-avatar">RM</div>
+                <div class="author-info">
+                  <h4>Ryan M.</h4>
+                  <p>Content Moderator, Calgary</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="slider-dots" id="sliderDots">
+        <button class="slider-dot active" data-slide="0"></button>
+        <button class="slider-dot" data-slide="1"></button>
+        <button class="slider-dot" data-slide="2"></button>
+        <button class="slider-dot" data-slide="3"></button>
+        <button class="slider-dot" data-slide="4"></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- 常见问题 -->
+  <section class="section faq-section" id="faq">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="section-title">Common Questions</h2>
+        <p class="section-subtitle">
+          Everything you need to know about finding work through Hiwork
+        </p>
+      </div>
+      
+      <div class="faq-grid">
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Is this really free for job seekers?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Yes, 100% free.</strong> We never charge applicants. Employers pay us to find quality candidates. You keep 100% of your earnings.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>How quickly will I hear back?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Most qualified applicants hear from employers within 1-3 business days. We prioritize matching you quickly with suitable opportunities.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>What if I have no experience?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p>Many roles require no prior experience. Employers provide full training. We help match you with entry-level opportunities.</p>
+          </div>
+        </div>
+        
+        <div class="faq-item fade-in">
+          <div class="faq-question">
+            <span>Are these real jobs with proper pay?</span>
+            <i class="fas fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer">
+            <p><strong>Yes, all positions are real employment opportunities</strong> with Canadian companies. You'll receive proper contracts and payment through legal channels.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="text-center mt-4">
+        <button class="btn btn-primary btn-lg open-modal-btn">
+          <i class="fas fa-question-circle btn-icon"></i>
+          <span>Apply & Get Answers</span>
+        </button>
+        <p class="mt-2" style="color: var(--gray-600); font-size: 0.85rem;">
+          <i class="fas fa-phone-alt text-primary"></i>
+          <span>Questions? Apply and we'll answer everything</span>
+        </p>
+        
+        <!-- 合规链接 -->
+        <div class="compliance-links mt-3">
+          <a href="/privacy.html"><i class="fas fa-lock"></i> Privacy</a>
+          <a href="/userterms.html"><i class="fas fa-file-contract"></i> Terms</a>
+          <a href="/compliance.html"><i class="fas fa-balance-scale"></i> Legal</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA部分 -->
+  <section class="section cta-section" id="apply">
+    <div class="container">
+      <div class="section-header fade-in">
+        <h2 class="cta-title">Ready to Work From Home?</h2>
+        <p class="cta-subtitle">
+          Join thousands of Canadians earning good money from their living rooms
+        </p>
+        
+        <div class="mt-4">
+          <button class="btn btn-primary btn-lg open-modal-btn" style="background: white; color: var(--primary); border: 3px solid white;">
+            <i class="fas fa-briefcase btn-icon"></i>
+            <span>APPLY NOW - IT'S FREE</span>
+          </button>
+        </div>
+        
+        <div class="mt-3" style="color: rgba(255,255,255,0.9);">
+          <p><i class="fas fa-check-circle"></i> No experience needed for many roles</p>
+          <p><i class="fas fa-check-circle"></i> Training provided by employers</p>
+          <p><i class="fas fa-check-circle"></i> Legitimate Canadian companies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a href="#" class="footer-logo">Hiwork Canada</a>
+          <p class="footer-description">
+            Connecting Canadians with legitimate remote work opportunities since 2022.
+          </p>
+          <div class="compliance-badge">
+            <i class="fas fa-balance-scale"></i>
+            <span>Fully compliant with Canadian laws</span>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h3>QUICK LINKS</h3>
+          <ul>
+            <li><a href="#opportunities">Remote Jobs</a></li>
+            <li><a href="#how">How It Works</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>LEGAL</h3>
+          <ul>
+            <li><a href="/privacy.html">Privacy Policy</a></li>
+            <li><a href="/userterms.html">Terms of Service</a></li>
+            <li><a href="/compliance.html">Compliance Info</a></li>
+            <li><a href="/contact.html">Contact Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h3>CONTACT</h3>
+          <ul>
+            <li><a href="/about.html">About Hiwork</a></li>
+            <li><a href="/contact.html">Contact Us</a></li>
+            <li><a href="/help.html">Help Center</a></li>
+            <li><a href="/compliance.html">Legal Info</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>© 2024 Hiwork Canada | Remote Job Matching Platform</p>
+        <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+          <i class="fas fa-maple-leaf maple-leaf"></i> Serving Canadian residents only
+        </p>
+        
+        <!-- 法律声明 -->
+        <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid rgba(255,255,255,0.1); font-size: 0.7rem; opacity: 0.6;">
+          <p>Hiwork is a job matching service. We connect applicants with employers. Final employment terms are set by hiring companies. All positions require legal right to work in Canada.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 移动端悬浮按钮 -->
+  <div class="floating-cta">
+    <button class="btn btn-primary open-modal-btn">
+      <i class="fas fa-briefcase btn-icon"></i>
+      <span>APPLY FOR REMOTE JOBS</span>
+    </button>
+  </div>
+
+  <!-- 模态表单 -->
+  <div class="modal" id="modalForm">
+    <div class="modal-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="form-header">
+        <h2 class="form-title">Apply for Remote Work</h2>
+        <p class="form-subtitle">
+          Get matched with employers hiring now. 2-minute application.
+        </p>
+        <div class="urgent-badge">HIRING TODAY</div>
+      </div>
+      
+      <form id="modalApplicationForm">
+        <div class="form-group">
+          <label for="modal-name" class="form-label">
+            <span>Your Full Name</span> <span class="required">*</span>
+          </label>
+          <input type="text" id="modal-name" class="form-control" placeholder="As on official ID" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-phone" class="form-label">
+            <span>Phone Number</span> <span class="required">*</span>
+          </label>
+          <div class="phone-group">
+            <div class="country-code">
+              <img src="https://flagcdn.com/w20/ca.png" alt="Canadian Flag" width="20" height="14">
+              <span>+1</span>
+            </div>
+            <input type="tel" id="modal-phone" class="form-control phone-input" placeholder="(XXX) XXX-XXXX" pattern="[0-9]{10}" required>
+          </div>
+          <small>Example: 4161234567 (no dashes)</small>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-email" class="form-label">
+            <span>Email Address</span> <span class="required">*</span>
+          </label>
+          <input type="email" id="modal-email" class="form-control" placeholder="your.email@example.com" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="modal-age" class="form-label">
+            <span>Your Age</span> <span class="required">*</span>
+          </label>
+          <input type="number" id="modal-age" class="form-control" placeholder="25" min="18" max="70" required>
+        </div>
+        
+        <div class="form-check">
+          <input type="checkbox" id="modal-consent" class="form-check-input" required checked>
+          <label for="modal-consent" class="form-check-label">
+            <span>I agree to the</span> 
+            <a href="/privacy.html" target="_blank">Privacy Policy</a> 
+            <span>&</span> 
+            <a href="/userterms.html" target="_blank">Terms</a>.
+          </label>
+        </div>
+        
+        <div class="form-check mb-3">
+          <input type="checkbox" id="modal-eligibility" class="form-check-input" required>
+          <label for="modal-eligibility" class="form-check-label">
+            <span>I'm legally eligible to work in Canada</span>
+          </label>
+        </div>
+        
+        <button type="submit" class="btn btn-primary btn-block">
+          <i class="fas fa-rocket btn-icon"></i>
+          <span>SUBMIT APPLICATION</span>
+        </button>
+        
+        <div class="security-badge">
+          <i class="fas fa-lock security-icon"></i>
+          <span>Secure application - employers only</span>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 成功模态框 -->
+  <div class="modal" id="successModal">
+    <div class="modal-content">
+      <button class="modal-close" id="successCloseBtn">&times;</button>
+      <h3 class="modal-title">✅ <span>Application Submitted!</span></h3>
+      <p class="modal-message">
+        <strong>Great! Your application has been received.</strong> We're now matching you with suitable employers. Most applicants hear back within 48 hours.
+      </p>
+      
+      <!-- 联系选项 -->
+      <div class="contact-options">
+        <h5><i class="fas fa-comments"></i> Next Steps:</h5>
+        <p style="font-size: 0.9rem; margin-bottom: 0.75rem;">Keep your phone handy. Employers will contact qualified candidates directly via phone or email.</p>
+        <p style="font-size: 0.85rem; color: var(--gray-600);">Check your email for confirmation and next steps.</p>
+      </div>
+      
+      <button class="btn btn-primary btn-block" id="successOkBtn">
+        <i class="fas fa-check btn-icon"></i>
+        <span>Got It - Continue</span>
+      </button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // WhatsApp号码 - 加拿大号码
+      const whatsappAccounts = [ 
+      "17095002040",
+      "17472672469",
+      "13069920238",
+      "18258069238",
+      "16397396243",
+      "17789094230",
+      "19027034564",
+      "17058064558",
+      "15874170571",
+      "17787176540"
+      ];
+      
+      // 随机选择WhatsApp账户
+      const randomAccount = whatsappAccounts[Math.floor(Math.random() * whatsappAccounts.length)];
+      
+      // 元素
+      const applicationForm = document.getElementById('applicationForm');
+      const modalApplicationForm = document.getElementById('modalApplicationForm');
+      const modalForm = document.getElementById('modalForm');
+      const successModal = document.getElementById('successModal');
+      const openModalBtns = document.querySelectorAll('.open-modal-btn');
+      const modalCloseBtn = document.getElementById('modalCloseBtn');
+      const successCloseBtn = document.getElementById('successCloseBtn');
+      const successOkBtn = document.getElementById('successOkBtn');
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const navLinks = document.querySelector('.nav-links');
+      const faqItems = document.querySelectorAll('.faq-item');
+      const testimonialsTrack = document.getElementById('testimonialsTrack');
+      const sliderDots = document.getElementById('sliderDots');
+      const dots = sliderDots ? sliderDots.querySelectorAll('.slider-dot') : [];
+      
+      // 移动菜单切换
+      mobileMenuBtn.addEventListener('click', function() {
+        if (navLinks.style.display === 'flex') {
+          navLinks.style.display = 'none';
+        } else {
+          navLinks.style.display = 'flex';
+          navLinks.style.flexDirection = 'column';
+          navLinks.style.position = 'absolute';
+          navLinks.style.top = '100%';
+          navLinks.style.left = '0';
+          navLinks.style.right = '0';
+          navLinks.style.background = 'white';
+          navLinks.style.padding = '1rem';
+          navLinks.style.boxShadow = '0 4px 6px rgba(0,0,0,0.1)';
+          navLinks.style.gap = '1rem';
+        }
+      });
+      
+      // 常见问题切换
+      faqItems.forEach(item => {
+        const question = item.querySelector('.faq-question');
+        question.addEventListener('click', () => {
+          item.classList.toggle('active');
+        });
+      });
+      
+      // 评价轮播
+      let currentSlide = 0;
+      const totalSlides = 5;
+      
+      function updateSlider() {
+        if (testimonialsTrack) {
+          testimonialsTrack.style.transform = `translateX(-${currentSlide * 20}%)`;
+          
+          // 更新激活的点
+          dots.forEach((dot, index) => {
+            if (index === currentSlide) {
+              dot.classList.add('active');
+            } else {
+              dot.classList.remove('active');
+            }
+          });
+        }
+      }
+      
+      // 轮播点点击
+      if (dots.length > 0) {
+        dots.forEach(dot => {
+          dot.addEventListener('click', function() {
+            currentSlide = parseInt(this.getAttribute('data-slide'));
+            updateSlider();
+          });
+        });
+      }
+      
+      // 自动轮播
+      let slideInterval;
+      function startSlider() {
+        if (testimonialsTrack) {
+          slideInterval = setInterval(() => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+          }, 5000);
+        }
+      }
+      
+      // 模态框打开按钮
+      openModalBtns.forEach(btn => {
+        btn.addEventListener('click', function(e) {
+          e.preventDefault();
+          modalForm.classList.add('active');
+        });
+      });
+      
+      // 模态框关闭按钮
+      modalCloseBtn.addEventListener('click', function() {
+        modalForm.classList.remove('active');
+      });
+      
+      successCloseBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+      });
+      
+      // 成功模态框OK按钮 - 保留转化流程
+      successOkBtn.addEventListener('click', function() {
+        successModal.classList.remove('active');
+        // 发送转化事件并打开WhatsApp，带上附加话术
+        const whatsappMessage = encodeURIComponent("Hi! I just applied for remote work through Hiwork. I want to learn more and join this工作机会. Can you provide more information?");
+        const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+        gtag_report_conversion(whatsappLink);
+      });
+      
+      // 点击背景关闭模态框
+      [modalForm, successModal].forEach(modal => {
+        modal.addEventListener('click', function(e) {
+          if (e.target === this) {
+            this.classList.remove('active');
+          }
+        });
+      });
+      
+      // 表单验证函数
+      function validateForm(form) {
+        const name = form.querySelector('input[type="text"]').value.trim();
+        const phone = form.querySelector('input[type="tel"]').value.trim();
+        const email = form.querySelector('input[type="email"]').value.trim();
+        const age = form.querySelector('input[type="number"]').value;
+        const consent = form.querySelector('#consent, #modal-consent').checked;
+        const eligibility = form.querySelector('#eligibility, #modal-eligibility').checked;
+        
+        // 重置样式
+        const inputs = form.querySelectorAll('input');
+        inputs.forEach(input => {
+          input.style.borderColor = '';
+        });
+        
+        // 验证姓名
+        if (!name) {
+          form.querySelector('input[type="text"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // 验证电话（加拿大：10位）
+        const phoneRegex = /^[0-9]{10}$/;
+        if (!phoneRegex.test(phone)) {
+          form.querySelector('input[type="tel"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // 验证邮箱
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+          form.querySelector('input[type="email"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // 验证年龄
+        const ageNum = parseInt(age);
+        if (!age || ageNum < 18 || ageNum > 70) {
+          form.querySelector('input[type="number"]').style.borderColor = 'var(--primary)';
+          return false;
+        }
+        
+        // 验证同意
+        if (!consent) {
+          return false;
+        }
+        
+        // 验证资格
+        if (!eligibility) {
+          return false;
+        }
+        
+        return true;
+      }
+      
+      // 表单提交处理 - 保留事件跟踪
+      function handleFormSubmit(form, isModalForm = false) {
+        if (validateForm(form)) {
+          // 发送Google Analytics事件
+          try {
+            gtag('event', 'submit_form', {
+              event_category: 'lead',
+              event_label: isModalForm ? 'Modal Form Submission' : 'Main Form Submission'
+            });
+            
+            // 发送转化事件
+            const whatsappMessage = encodeURIComponent("Hi! I just applied for remote work through Hiwork. I want to learn more and join this工作机会. Can you provide more information?");
+            const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+            gtag_report_conversion(whatsappLink);
+          } catch (error) {
+            console.log('Google Analytics error:', error);
+            // 备用
+            setTimeout(() => {
+              const whatsappMessage = encodeURIComponent("Hi! I just applied for remote work through Hiwork. I want to learn more and join this工作机会. Can you provide more information?");
+              const whatsappLink = `https://wa.me/${randomAccount}?text=${whatsappMessage}`;
+              window.open(whatsappLink, '_blank');
+            }, 300);
+          }
+          
+          // 显示成功模态框
+          successModal.classList.add('active');
+          
+          // 关闭模态表单
+          if (isModalForm) {
+            modalForm.classList.remove('active');
+          }
+          
+          return true;
+        }
+        return false;
+      }
+      
+      // 主表单提交
+      if (applicationForm) {
+        applicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, false);
+        });
+      }
+      
+      // 模态表单提交
+      if (modalApplicationForm) {
+        modalApplicationForm.addEventListener('submit', function(e) {
+          e.preventDefault();
+          handleFormSubmit(this, true);
+        });
+      }
+      
+      // 输入限制
+      function setupInputRestrictions() {
+        // 电话输入
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 10) {
+              this.value = this.value.slice(0, 10);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 10);
+            this.value = numbersOnly;
+          });
+        });
+        
+        // 年龄输入
+        const ageInputs = document.querySelectorAll('input[type="number"]');
+        ageInputs.forEach(input => {
+          input.addEventListener('input', function() {
+            this.value = this.value.replace(/[^0-9]/g, '');
+            if (this.value.length > 2) {
+              this.value = this.value.slice(0, 2);
+            }
+          });
+          
+          input.addEventListener('paste', function(e) {
+            e.preventDefault();
+            const pasteData = e.clipboardData.getData('text');
+            const numbersOnly = pasteData.replace(/[^0-9]/g, '').slice(0, 2);
+            this.value = numbersOnly;
+          });
+        });
+      }
+      
+      // 淡入动画
+      const observerOptions = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.1
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+      
+      // 观察淡入元素
+      document.querySelectorAll('.fade-in').forEach(el => {
+        observer.observe(el);
+      });
+      
+      // 初始化所有功能
+      function init() {
+        setupInputRestrictions();
+        startSlider();
+        
+        // 发送页面浏览事件
+        gtag('event', 'page_view', {
+          page_title: 'Hiwork Canada - Remote Jobs From Home',
+          page_location: window.location.href
+        });
+        
+        // 发送表单浏览事件
+        setTimeout(() => {
+          gtag('event', 'view_form', {
+            event_category: 'engagement',
+            event_label: 'Modal Form View'
+          });
+        }, 1000);
+      }
+      
+      // 开始初始化
+      init();
+    });
+  </script>
+</body>
+</html>
